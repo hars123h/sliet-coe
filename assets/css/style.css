@@ -1249,7 +1249,7 @@ li {
 .hero-left h2 span {
     display: block;
     position: relative;
-    z-index: 1
+    z-index: 1;
 }
 
 .underline {
@@ -2465,7 +2465,7 @@ li {
 }
 
 .login-form {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 65%
 }
 
