@@ -1,30 +1,3 @@
-/************* Main Js File ************************
-    Template Name: Robofume
-    Author: Themescare
-    Version: 1.0
-    Copyright 2020
-*************************************************************/
-
-
-/*------------------------------------------------------------------------------------
-    
-JS INDEX
-=============
-01 - Pricing Filter JS
-02 - Search Toggle JS
-03 - Companies Slider JS
-04 - Testimonial Slider JS
-05 - Login Slider JS
-06 - Youtube Popup JS
-07 - Counter JS
-08 - Hover Active JS
-09 - Quantity Js
-10 - Responsive Menu Js
-11 - Wow Js
-12 - Scroll Header Js
-13 - Preloader Js
-
--------------------------------------------------------------------------------------*/
 
 
 (function($) {
@@ -144,11 +117,11 @@ JS INDEX
         =================================================================	
         */
 
-        $('.play-video').magnificPopup({
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            preloader: true,
-        });
+        // $('.play-video').magnificPopup({
+        //     type: 'iframe',
+        //     mainClass: 'mfp-fade',
+        //     preloader: true,
+        // });
 
         /* 
         =================================================================
@@ -177,28 +150,28 @@ JS INDEX
         /*==============================
         09 - Quantity Js
         ==============================*/
-        $(".num-in span").on("click", function() {
-            var $input = $(this).parents('.num-block').find('input.in-num');
-            if ($(this).hasClass('minus')) {
-                var count = parseFloat($input.val()) - 1;
-                count = count < 1 ? 1 : count;
-                if (count < 2) {
-                    $(this).addClass('dis');
-                } else {
-                    $(this).removeClass('dis');
-                }
-                $input.val(count);
-            } else {
-                var count = parseFloat($input.val()) + 1
-                $input.val(count);
-                if (count > 1) {
-                    $(this).parents('.num-block').find(('.minus')).removeClass('dis');
-                }
-            }
+        // $(".num-in span").on("click", function() {
+        //     var $input = $(this).parents('.num-block').find('input.in-num');
+        //     if ($(this).hasClass('minus')) {
+        //         var count = parseFloat($input.val()) - 1;
+        //         count = count < 1 ? 1 : count;
+        //         if (count < 2) {
+        //             $(this).addClass('dis');
+        //         } else {
+        //             $(this).removeClass('dis');
+        //         }
+        //         $input.val(count);
+        //     } else {
+        //         var count = parseFloat($input.val()) + 1
+        //         $input.val(count);
+        //         if (count > 1) {
+        //             $(this).parents('.num-block').find(('.minus')).removeClass('dis');
+        //         }
+        //     }
 
-            $input.change();
-            return false;
-        });
+        //     $input.change();
+        //     return false;
+        // });
 
 
         /*==============================
